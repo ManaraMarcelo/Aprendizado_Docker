@@ -14,4 +14,4 @@ docker build -t nginx:v1 .
 # Execução do container mapeando porta 3000 (host) → 80 (container nginx)
 docker run -dp 3000:80 --name tangerina nginx:v1
 
-![Página Rodando](Ex1/PRINTS/Landing-page-rodando.png)
+![Página Rodando](arquivos-do-exercicio/PRINTS/Landing-page-rodando.png)
