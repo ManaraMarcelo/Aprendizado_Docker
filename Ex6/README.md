@@ -1,4 +1,4 @@
-# Exercício 2 - Criando e Rodando um container interativo
+# Exercício 6 - Criando e rodando um container MULTI-STAGE
 
 ## Descrição 
 Utilize um multi-stage build para otimizar uma aplicação Go, reduzindo o tamanho da imagem final. Utilize para praticar o projeto GS PING desenvolvido em Golang.
