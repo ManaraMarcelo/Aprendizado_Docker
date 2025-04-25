@@ -13,3 +13,6 @@ docker build -t exercicio9:v1 .
 # Rodar o container
 docker run -dp 5000:80 --name Ex9 exercicio9:v1
 ```
+
+## Página rodando
+![paginaRodando](https://raw.githubusercontent.com/ManaraMarcelo/Aprendizado_Docker/refs/heads/main/Ex9/images/pagina%20rodando.png)
