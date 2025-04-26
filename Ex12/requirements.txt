@@ -1,0 +1,7 @@
+# Versão vulneravel:
+#flask==1.1.1
+#requests==2.22.0
+
+# Versão segura:
+Flask>=2.3.3
+requests>=2.31.0
