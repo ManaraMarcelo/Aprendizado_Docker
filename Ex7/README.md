@@ -12,7 +12,7 @@ docker compose up --build
 ```
 
 ## Api funcionando 
-![]()
+![api funcionando](https://raw.githubusercontent.com/ManaraMarcelo/Aprendizado_Docker/refs/heads/main/Ex7/images/apiFuncionando.png)
 
 ## Front funcionando
-![]()
+![front funcionando](https://raw.githubusercontent.com/ManaraMarcelo/Aprendizado_Docker/refs/heads/main/Ex7/images/front-funcionando.png)
