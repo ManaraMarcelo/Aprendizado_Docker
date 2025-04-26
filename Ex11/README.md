@@ -7,6 +7,7 @@ a.	Instalar o Trivy na sua máquina (via script ou pacote).
 b.	Rodar trivy image python:3.9 para analisar.
 c.	Identificar vulnerabilidades com severidade HIGH ou CRITICAL.
 d.	Anotar os pacotes ou bibliotecas afetadas e sugerir possíveis ações (como atualização da imagem base ou substituição de dependências).
+
 ---
 
 ## ⚙️ Comandos para instalar o Trivy
