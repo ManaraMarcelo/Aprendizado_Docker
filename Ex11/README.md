@@ -54,25 +54,21 @@ Total: 1472 (UNKNOWN: 4, LOW: 709, MEDIUM: 638, HIGH: 116, CRITICAL: 5)
 ```
 ## Recomendações baseadas nas vulnerabilidades:
 
-1. Trocar a imagem base: usar uma com menos dependências (alpine ou slim).
-2. 
-
 1. Trocar a imagem base
 Use uma imagem com menos dependências e menor superfície de ataque, como python:3.9-slim ou python:3.9-alpine:
 
-Dockerfile
 ```bash
 FROM python:3.9-slim
-Essas versões contêm menos pacotes do sistema, reduzindo drasticamente o número de vulnerabilidades.
 ```
+Essas versões contêm menos pacotes do sistema, reduzindo drasticamente o número de vulnerabilidades.
 
 2. Atualizar pacotes Python
 Dentro do seu container, execute:
 
 ```bash
 pip install --upgrade pip setuptools
-Isso atualizará os pacotes para versões mais seguras (desde que compatíveis com o seu projeto).
 ```
+Isso atualizará os pacotes para versões mais seguras (desde que compatíveis com o seu projeto).
 
 3. Manter o sistema atualizado
 Para reduzir vulnerabilidades do Debian:
