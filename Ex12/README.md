@@ -1,8 +1,21 @@
+# Exercício 12 - Corrigir vulnerabilidades encontradas
 
+## Descrição 
+Após identificar vulnerabilidades com ferramentas como o Trivy, o próximo passo é corrigi-las. Imagens grandes e genéricas frequentemente trazem bibliotecas desnecessárias e vulneráveis, além de usarem o usuário root por padrão. Neste exercício, você irá trabalhar com um exemplo de Dockerfile com más práticas e aplicar melhorias para construir uma imagem mais segura e enxuta. Identifique as melhorias e gere uma nova versão de Dockerfile
 
+---
 
+## 🐳 Comandos Docker utilizados
+```bash
+# Construir imagem a partir do Dockerfile vulneravel
+docker build -t docker-vulneravel
 
+# Verificar vulnerabilidades na imagem com o Trivy
+trivy image docker-vulneravel
+```
 
+## Resumo das vulnerabilidades
+```bash
 Report Summary
 
 ┌─────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
@@ -45,6 +58,7 @@ Legend:
 docker-vulneravel (debian 12.10)
 ================================
 Total: 1472 (UNKNOWN: 4, LOW: 709, MEDIUM: 638, HIGH: 116, CRITICAL: 5)
+```
 
 ## Pacotes Python vulneráveis:
 
@@ -55,7 +69,8 @@ requests 2.22.0: 2 vulnerabilidades
 setuptools 58.1.0: 2 vulnerabilidades
 urllib3 1.25.11: 4 vulnerabilidades
 
-
+## Após atualizações realizadas no Dockerfile
+```bash
 Report Summary
 
 ┌──────────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
@@ -105,6 +120,6 @@ Legend:
 docker-nao-vulneravel (debian 12.10)
 ====================================
 Total: 290 (UNKNOWN: 0, LOW: 258, MEDIUM: 30, HIGH: 1, CRITICAL: 1)
+```
 
-## Redução considerável na vulnerabilidade
-Seguem algumas vulnerabilidades que podem ser reduzidas talvez utilizando uma imagem alpine ao invés de slim.
+Obs: DockerfileVulneravel é o arquivo com o Dockerfile inicial enquanto fora realizada uma atualização na versão dos requeriments também, porém no próprio arquivo.
