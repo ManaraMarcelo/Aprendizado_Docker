@@ -62,12 +62,12 @@ Total: 1472 (UNKNOWN: 4, LOW: 709, MEDIUM: 638, HIGH: 116, CRITICAL: 5)
 
 ## Pacotes Python vulneráveis:
 
-Flask 1.1.1: 1 vulnerabilidade
-idna 2.8: 1 vulnerabilidade
-pip 23.0.1: 1 vulnerabilidade
-requests 2.22.0: 2 vulnerabilidades
-setuptools 58.1.0: 2 vulnerabilidades
-urllib3 1.25.11: 4 vulnerabilidades
+Flask 1.1.1: 1 vulnerabilidade  
+idna 2.8: 1 vulnerabilidade  
+pip 23.0.1: 1 vulnerabilidade  
+requests 2.22.0: 2 vulnerabilidades  
+setuptools 58.1.0: 2 vulnerabilidades  
+urllib3 1.25.11: 4 vulnerabilidades  
 
 ## Após atualizações realizadas no Dockerfile
 ```bash
